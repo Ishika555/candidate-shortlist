@@ -12,8 +12,8 @@ const {
 } = require("../controllers/matchController");
 
 // POST /api/match              → Basic rule-based candidate shortlisting
-router.post("/", basicShortlist);
-
+//router.post("/", basicShortlist); ->old route
+router.post("/match", basicShortlist);
 // POST /api/ai/shortlist       → AI-powered candidate ranking via OpenRouter
 router.post("/ai/shortlist", aiShortlist);
 
